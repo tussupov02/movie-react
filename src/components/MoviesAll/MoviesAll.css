@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+}
+.movie{
+    /* width: 220px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 10px;
+    object-fit: cover;
+    transition: all 0.3s ease 0s;
+    animation: 0.5s ease 0s 1 normal none running animateThumb;
+    cursor: pointer; */
+    width: 100%;
+    max-width: 720px;
+    border-radius: 20px;
+    object-fit: cover;
+    height: auto;
+    cursor: pointer;
+}
+.movie:hover{
+    animation: 0.5s animateThumb;
+    animation-fill-mode: both;
+}
+@keyframes animateThumb {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+
+    }
+}
+.mainMoviesList{
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 25px;
+}
+.movieList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bannerMovie{
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.bannerMovieBox{
+    width: 1200px;
+    border-radius: 20px;
+    background-color: rgba(000, 000, 000, 0.7);
+    display: flex;
+    justify-content: center;
+}
+.bannerMovieBoxImg{
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 500px;
+    
+}
+.bannerMovieBoxText{
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    color: #eee;
+    font-weight: 700;
+}
+.bannerMovieBoxText h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.bannerMovieBoxPlot{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.bannerMovieBoxPlotText{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.rating{
+    margin-top: 50px;
+}
+.rating p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ratingBox{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.bannerMovieFalse{
+    background-size: 100%, cover;
+    height: 500px;
+    position: relative;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    line-height: normal;
+    object-fit: cover;
+}
+.bannerMovieBoxTextFalse{
+    color: #eee;
+    width: 85%;
+}
+.bannerMovieBoxTextFalse h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 52%;
+    line-height: 1em;
+    padding-bottom: 20px;
+}
+.bannerMovieBoxTextFalse p{
+    width: 52%;
+    font-size: 17px;
+    padding-bottom: 25px;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+.movieList p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #353535;
+    margin-top: 25px;
+}
+.movieListTitle{
+    width: 85%;
+}
+.bannerMovieContainerFalse{
+    width: 86%;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    width: 25%;
+    min-width: 200px;
+    height: 60px;
+    align-items: center;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 20px auto;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+}

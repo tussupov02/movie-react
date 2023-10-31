@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@500&display=swap');
+
+header{
+    width: 100%;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    width: 85%;
+}
+.headerTitle{
+    width: 200px;
+}
+
+.headerImg{
+    width: 100px;
+    height: 50px;
+}
